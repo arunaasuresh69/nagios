@@ -122,7 +122,36 @@ http://localhost/nagios/
 3.16	You will get the Nagios Dashboard as shown below:
  
 3.17	You've installed Nagios on the Ubuntu server.
+```
+# Adding host remote server details in host.cfg
 
+### vim /usr/local/nagios/etc/servers
+```
+
+define host {
+   use linux-server
+   host_name nginx
+   alias nginx Host
+   address 172.17.0.2
+   register 1
+}
+
+define service {
+   host_name nginx
+   service_description PING
+   check_command check_ping!100.0,20%!500.0,60%
+   max_check_attempts 2
+   check_interval 2
+   retry_interval 2
+   check_period 24x7
+   check_freshness 1
+   contact_groups admins
+   notification_interval 2
+   notification_period 24x7
+   notifications_enabled 1
+   register 1
+}
+```
  
 
 
