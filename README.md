@@ -2,10 +2,10 @@
 nagios installation and host monitoring docker and ansible
 
 
-Lesson 9 Demo 1
-How to Install Nagios Monitoring Tool
 
+## How to Install Nagios Monitoring Tool
 
+```
 Steps to be followed:
 1.	Installing package dependencies
 2.	Installing Nagios Core 4.4.6
