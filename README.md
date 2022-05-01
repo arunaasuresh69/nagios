@@ -125,7 +125,7 @@ http://localhost/nagios/
 ```
 # Adding host remote server details in host.cfg
 
-### vim /usr/local/nagios/etc/servers
+### vim /usr/local/nagios/etc/servers/host.cfg
 ```
 
 define host {
@@ -152,7 +152,12 @@ define service {
    register 1
 }
 ```
- 
+- Restart the nagios service 
+
+ ```
+ sudo service restart nagios 
+
+ ``` 
 
 
 
