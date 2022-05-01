@@ -5,20 +5,22 @@ nagios installation and host monitoring docker and ansible
 
 ## How to Install Nagios Monitoring Tool
 
-```
-Steps to be followed:
+
+- Steps to be followed:
 1.	Installing package dependencies
 2.	Installing Nagios Core 4.4.6
 3.	Installing Nagios and NRPE plugins
 
-Step 1: Installing package dependencies
+- Step 1: Installing package dependencies
 1.1	Install the package dependencies using the following commands:
-
+``` 
+ 
 sudo apt update
 sudo apt install -y autoconf bc gawk dc build-essential gcc libc6 make wget unzip apache2 php libapache2-mod-php libgd-dev libmcrypt-dev make libssl-dev snmp libnet-snmp-perl gettext
+``` 
+ 
 
-
-Step 2: Installing Nagios Core 4.4.6
+- Step 2: Installing Nagios Core 4.4.6
 2.1	Download the Nagios Core source code
 cd ~/
 wget https://github.com/NagiosEnterprises/nagioscore/archive/nagios-4.4.6.tar.gz
@@ -158,6 +160,7 @@ define service {
  sudo service restart nagios 
 
  ``` 
+
 
 
 
