@@ -154,7 +154,7 @@ define service {
 ```
 - Restart the nagios service 
  ```
- sudo service restart nagios 
+ sudo service nagios restart
 
  ``` 
 
